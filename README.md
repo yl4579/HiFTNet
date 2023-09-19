@@ -20,8 +20,16 @@ cd HiFTNet
 pip install -r requirements.txt
 ```
 
-
 ## Training
 ```bash
 python train.py --config config_v1.json --[args]
 ```
+For the F0 model training, please refer to [yl4579/PitchExtractor](https://github.com/yl4579/PitchExtractor). This repo includes a pre-trained F0 model on LibriTTS. Still, you may want to train your own F0 model for the best performance, particularly for noisy or non-speech data, as we found that F0 estimation accuracy is essential for the vocoder performance. 
+
+## Inference
+Please refer to the notebook [inference.ipynb](https://github.com/yl4579/HiFTNet/blob/main/inference.ipynb) for details.
+### Pre-Trained Models
+You can download the pre-trained LJSpeech model [here](https://drive.google.com/drive/folders/1eESio-lhw0enutg5HHjxcryHnDLyoqOe?usp=sharing) and the pre-trained LibriTTS model [here](https://drive.google.com/drive/folders/1zrXSco_JuIToQrMEtfeZtNTMm_Xb02L9?usp=sharing). The pre-trained models contain parameters for the optimizers and discriminators for fine-tuning.  
+
+## References
+- [rishikksh20/iSTFTNet-pytorch](https://github.com/rishikksh20/iSTFTNet-pytorch)
