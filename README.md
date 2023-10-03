@@ -8,6 +8,8 @@ Paper: [https://arxiv.org/abs/2309.09493](https://arxiv.org/abs/2309.09493)
 
 Audio samples: [https://hiftnet.github.io/](https://hiftnet.github.io/)
 
+#### Check our TTS work that uses HiFTNet as speech decoder for human-level speech synthesis here: https://github.com/yl4579/StyleTTS2
+
 ## Pre-requisites
 1. Python >= 3.7
 2. Clone this repository:
